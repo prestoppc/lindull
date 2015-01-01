@@ -1,4 +1,4 @@
---[[ SOBRE OS DIAS QUE INICIOU O SCRIPT
+--[[ SOBRE OS DIAS QUE INICIARAM O SCRIPT
 
 saquei bro. iniciando test script lua primeira vez no ubuntu
 
@@ -14,9 +14,23 @@ petropolis, 31-12, atualizando script no git
 
 
 -- NECROMANCER / TINY NECROMANCER /
-
 -- criado por Presto
 
+--[[ INDICE
+OVERVIEW
+NAMES
+ATRIBUTOS
+MANA E PONTOS DE VIDA
+MOVIMENTACAO
+ATAQUE E DEFESA
+EXTRAS
+SKILLS PHYSICAL
+SKILLS MENTAL
+MAGIAS
+MODS
+VIDEO
+CONTROLS
+--]]
 
 --[[ OVERVIEW
 
@@ -86,6 +100,7 @@ move = (st + ht) / 2 -- isso existe?
 
 run = move * 3 -- caso o jogador queira correr
 
+
 -- ATAQUE E DEFESA
 
 atml = (dx + ht) / 2 - 10 -- attack meele light
@@ -102,8 +117,11 @@ dfwb = (st + dx) / 4 -- defense weapon block
 
 
 -- EXTRAS
+math.randomseed(os.time())
 
 dmg = st - 10 -- bonus acrescido ao dano da arma
+
+testroll = math.random(3,18) -- rolagem de teste (3d6)
 
 xp = 0 -- experiencia ganha durante o jogo
 
