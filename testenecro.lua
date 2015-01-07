@@ -63,9 +63,9 @@ apresentado ao final. Usa as tropas para poder proteger os bom humanos.
 
 -- NAMES
 
-charname = "Lin'Dull"
+charName = "Lin'Dull"
 
-playername = nil
+playerName = nil
 
 
 -- ATRIBUTOS
@@ -81,15 +81,15 @@ ht = 10 -- vitalidade
 
 -- MANA E PONTOS DE VIDA
 
-manmax = iq -- pontos de mana
+manaMax = iq -- pontos de mana
 
-mancur = iq - mana -- pontos de mana atual
+manaCur = iq - mana -- pontos de mana atual
 
 mana = 0 -- mana usado ao soltar magias. Zera ao dormir.
 
-pvmax = ht -- pontos de vida
+pvMax = ht -- pontos de vida
 
-pvcur = ht - hurt -- pontos de vida com dano atual
+pvCur = ht - hurt -- pontos de vida com dano atual
 
 hurt = 0 -- starts with zero. any damage taken, adds here
 
@@ -103,17 +103,17 @@ run = move * 3 -- caso o jogador queira correr
 
 -- ATAQUE E DEFESA
 
-atml = (dx + ht) / 2 - 10 -- attack meele light
+atMl = (dx + ht) / 2 - 10 -- attack meele light
 
-atmh = (st + ht) / 2 - 10 -- attack meele heavy
+atMh = (st + ht) / 2 - 10 -- attack meele heavy
 
-atlo = (dx + st) / 2 - 10 -- attack long distance
+atLo = (dx + st) / 2 - 10 -- attack long distance
 
-dfes = (dx + ht) / 4 -- defense esquiva
+dfEs = (dx + ht) / 4 -- defense esquiva
 
-dfsb = (st + ht) / 4 -- defense shield block
+dfSb = (st + ht) / 4 -- defense shield block
 
-dfwb = (st + dx) / 4 -- defense weapon block
+dfWb = (st + dx) / 4 -- defense weapon block
 
 
 -- EXTRAS
@@ -121,15 +121,15 @@ math.randomseed(os.time())
 
 dmg = st - 10 -- bonus acrescido ao dano da arma
 
-testroll = math.random(3,18) -- rolagem de teste (3d6)
+testRoll = math.random(3,18) -- rolagem de teste (3d6)
 
 xp = 0 -- experiencia ganha durante o jogo
 
 zombies = 0 -- número de zumbis sob comando do jogador em tempo real
 
-zbscreated = 0 -- zumbis criado pelo jogador através da magia zumbi
+zbsCreated = 0 -- zumbis criado pelo jogador através da magia zumbi
 
-zbsdominated = 0 -- zumbis dominador pelo jogador através da magia controlar zumbi
+zbsDominated = 0 -- zumbis dominador pelo jogador através da magia controlar zumbi
 
 kills = 0 -- todas as kills do jogador
 
@@ -147,9 +147,9 @@ armor = nil
 
 shield = nil
 
-manapot = 0 -- pocoes de mana
+manaPot = 0 -- pocoes de mana
 
-hitpot = 0 -- pocoes de cura
+hitPot = 0 -- pocoes de cura
 
 
 -- skills physical
