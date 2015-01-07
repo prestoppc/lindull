@@ -4,7 +4,7 @@ saquei bro. iniciando test script lua primeira vez no ubuntu
 
 buzios, 28-12-2014, 15:24
 
-buzios, 30-12, por volta das 10 da manha. meu aniversario e git criado e script no ipad
+buzios, 30-12, por volta das 10 da manha. meu aniversario e git criado, feito no ipad
 
 sendo escrito na praia.
 
